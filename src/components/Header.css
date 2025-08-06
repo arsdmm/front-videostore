@@ -1,6 +1,6 @@
 .header {
   position: relative;
-  z-index: 10; /* Поверх HeroSection */
+  z-index: 10;
   background: linear-gradient(to right, #1a0f2e, #0c0615);;
   padding: 14px 30px;
   display: flex;
@@ -76,6 +76,7 @@ nav ul li button:hover {
   background-color: #1a072f;
   color: #f4eaff;
   font-size: 14px;
+  font-family: 'Orbitron', sans-serif;
   outline: none;
   transition: border-color 0.3s ease;
 }
@@ -100,6 +101,16 @@ nav ul li button:hover {
   z-index: 1000;
   max-height: 250px;
   overflow-y: auto;
+  opacity: 0;
+  transform: translateY(-10px);
+  pointer-events: none;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+}
+
+.search-dropdown.show {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
 }
 
 .search-dropdown li {

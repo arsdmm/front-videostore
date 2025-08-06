@@ -40,7 +40,7 @@ const Header = () => {
           <Link to="/" className="logo-link">Obsidian</Link>
         </div>
 
-        <div className="center">
+        <div className="search-container">
           <div className="search-bar">
             <input
               type="text"
@@ -48,15 +48,13 @@ const Header = () => {
               value={query}
               onChange={(e) => setQuery(e.target.value)}
             />
-            {results.length > 0 && (
-              <ul className="search-dropdown">
-                {results.map(item => (
-                  <li key={item.id} onClick={() => handleSelect(item.id, item.type)}>
-                    {item.title}
-                  </li>
-                ))}
-              </ul>
-            )}
+            <ul className={`search-dropdown ${results.length > 0 ? 'show' : ''}`}>
+              {results.map(item => (
+                <li key={item.id} onClick={() => handleSelect(item.id, item.type)}>
+                  {item.title}
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
 
