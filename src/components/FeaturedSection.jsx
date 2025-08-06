@@ -21,14 +21,14 @@ const FeaturedSection = ({ endpoint, title }) => {
   useEffect(() => {
     /*
       This useEffect runs on mount and whenever `endpoint` changes.
-      It performs a fetch request to our fake API hosted on Railway.
+      It performs a fetch request to the deployed backend API.
 
       For example:
-        GET https://railwayvideostore-production.up.railway.app/movies
+        GET https://backend-videostore.onrender.com/api/movies?type=movies
         or
-        GET https://railwayvideostore-production.up.railway.app/tvshows
+        GET https://backend-videostore.onrender.com/api/movies?type=tvshows
     */
-    fetch(`${process.env.REACT_APP_API_URL}/${endpoint}`)
+    fetch(`${import.meta.env.VITE_API_BASE_URL}?type=${endpoint}`)
       .then(res => res.json())
       .then(data => {
         /*
@@ -53,7 +53,7 @@ const FeaturedSection = ({ endpoint, title }) => {
           The entire card is clickable and links to a details page.
         */}
         {items.map(item => (
-          <Link to={`/${endpoint}/${item.id}`} key={item.id}>
+          <Link to={`/${item.type}/${item._id}`} key={item._id}>
             <div className="card">
               <img src={item.posterSmall} alt={item.title} />
               <h3>{item.title}</h3>

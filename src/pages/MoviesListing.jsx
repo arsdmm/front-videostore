@@ -2,20 +2,24 @@ import React, { useEffect, useState } from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import { Link } from 'react-router-dom';
-import '../styles/Listing.css'; // Добавим отдельный CSS файл для стилей
+import '../styles/Listing.css';
 
 const MoviesListing = () => {
   const [movies, setMovies] = useState([]);
   const [tvshows, setTvshows] = useState([]);
 
   useEffect(() => {
-    fetch(`${process.env.REACT_APP_API_URL}/movies`)
+    // Fetch movies (type = movies)
+    fetch(`${import.meta.env.VITE_API_BASE_URL}?type=movies`)
       .then(res => res.json())
-      .then(data => setMovies(data));
+      .then(data => setMovies(data))
+      .catch(err => console.error('Error fetching movies:', err));
 
-    fetch(`${process.env.REACT_APP_API_URL}/tvshows`)
+    // Fetch tvshows (type = tvshows)
+    fetch(`${import.meta.env.VITE_API_BASE_URL}?type=tvshows`)
       .then(res => res.json())
-      .then(data => setTvshows(data));
+      .then(data => setTvshows(data))
+      .catch(err => console.error('Error fetching tvshows:', err));
   }, []);
 
   return (

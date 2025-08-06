@@ -4,28 +4,28 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import '../styles/MovieDetails.css';
 
-const MovieDetails = ({ type }) => {
+const MovieDetails = () => {
   const { id } = useParams();
   const [item, setItem] = useState(null);
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch(`${process.env.REACT_APP_API_URL}/${type}/${Number(id)}`)
+    fetch(`${import.meta.env.VITE_API_BASE_URL}/${id}`)
       .then(res => {
         if (!res.ok) {
-          throw new Error(`${type} not found`);
+          throw new Error('Item not found');
         }
         return res.json();
       })
       .then(data => {
-        if (Object.keys(data).length === 0) {
-          setError(`${type} not found`);
+        if (!data || Object.keys(data).length === 0) {
+          setError('Item not found');
         } else {
           setItem(data);
         }
       })
       .catch(err => setError(err.message));
-  }, [id, type]);
+  }, [id]);
 
   if (error) return <div className="movie-details-error">{error}</div>;
   if (!item) return <div className="movie-details-loading">Loading...</div>;
