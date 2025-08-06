@@ -1,0 +1,38 @@
+.news-section {
+  background: linear-gradient(to right, #1a0f2e, #0c0615);
+  color: #e6e6e6;
+  padding: 50px 20px;
+  text-align: center;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.news-section h2 {
+  font-size: 30px;
+  color: #b084f5;
+  margin-bottom: 20px;
+}
+
+.news-content {
+  max-width: 800px;
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.news-btn {
+  margin-top: 30px;
+  padding: 12px 28px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 25px;
+  background: #8a2be2;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.news-btn:hover {
+  background: #a65bf7;
+  transform: scale(1.05);
+}

@@ -1,0 +1,66 @@
+.movie-details-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.movie-details-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 80px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 160px;
+  margin-bottom: 200px;
+  flex-wrap: wrap;
+  animation: fadeInUp 0.8s ease-in-out;
+}
+
+.poster-section .poster-img {
+  max-width: 400px;
+  border-radius: 14px;
+  box-shadow: 0 0 20px #a855f7;
+}
+
+.info-section {
+  max-width: 500px;
+}
+
+.info-section .title {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 36px;
+  color: #ffffff;
+  margin-bottom: 15px;
+  text-shadow: 0 0 10px #a855f7;
+}
+
+.info-section .description {
+  color: #d1d5db;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.price-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.price-btn {
+  background: #a855f7;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  color: #fff;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+  box-shadow: 0 0 12px #a855f7;
+  transition: transform 0.2s ease;
+}
+
+.price-btn:hover {
+  transform: scale(1.05);
+}

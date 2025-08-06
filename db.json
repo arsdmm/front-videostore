@@ -1,0 +1,132 @@
+{
+  "movies": [
+    {
+      "id": 1,
+      "title": "Frozen II",
+      "synopsis": "Elsa sets out to discover the origin of her magical powers.",
+      "posterSmall": "https://lumiere-a.akamaihd.net/v1/images/p_frozen2_19644_4c4b423d.jpeg?region=0%2C0%2C540%2C810",
+      "posterLarge": "https://images.squarespace-cdn.com/content/v1/608d9ef497633c6b6eb71caf/1620696498000-FUF5X3QB57CDQNG7GC3O/scale.jpg",
+      "priceRent": "3.99",
+      "priceBuy": "14.99"
+    },
+    {
+      "id": 2,
+      "title": "Endgame",
+      "synopsis": "The Avengers assemble once more in order to reverse Thanos' actions.",
+      "posterSmall": "https://upload.wikimedia.org/wikipedia/en/0/0d/Avengers_Endgame_poster.jpg",
+      "posterLarge": "https://miro.medium.com/v2/resize:fill:1200:675/g:fp:0.52:0.56/1*kp5e81vAqe98EFtA3fhaTw.jpeg",
+      "priceRent": "4.99",
+      "priceBuy": "19.99"
+    },
+    {
+      "id": 3,
+      "title": "Inception",
+      "synopsis": "A thief who steals corporate secrets through dream-sharing technology is given a chance to erase his past crimes.",
+      "posterSmall": "https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_.jpg",
+      "posterLarge": "https://static1.srcdn.com/wordpress/wp-content/uploads/2019/04/Inception.jpg",
+      "priceRent": "3.49",
+      "priceBuy": "13.99"
+    },
+    {
+      "id": 4,
+      "title": "The Dark Knight",
+      "synopsis": "Batman faces the Joker, who seeks to undermine his influence and throw Gotham into chaos.",
+      "posterSmall": "https://musicart.xboxlive.com/7/abb02f00-0000-0000-0000-000000000002/504/image.jpg",
+      "posterLarge": "https://thegoodsreviews.com/wp-content/uploads/2022/07/tdk1-1-1200x675.jpg",
+      "priceRent": "3.99",
+      "priceBuy": "14.99"
+    },
+    {
+      "id": 5,
+      "title": "Interstellar",
+      "synopsis": "A team of explorers travel through a wormhole in space in an attempt to save humanity.",
+      "posterSmall": "https://m.media-amazon.com/images/I/91kFYg4fX3L._AC_SY679_.jpg",
+      "posterLarge": "https://i.ytimg.com/vi/YF1eYbfbH5k/maxresdefault.jpg",
+      "priceRent": "4.49",
+      "priceBuy": "16.99"
+    },
+    {
+      "id": 6,
+      "title": "Joker",
+      "synopsis": "A mentally troubled stand-up comedian embarks on a downward spiral that leads to the creation of the iconic villain.",
+      "posterSmall": "https://upload.wikimedia.org/wikipedia/en/e/e1/Joker_%282019_film%29_poster.jpg",
+      "posterLarge": "https://static01.nyt.com/images/2019/10/05/arts/04Joker-Cover/merlin_161549496_c55020b5-50f8-432b-a141-64fea126a42b-videoSixteenByNineJumbo1600.jpg",
+      "priceRent": "3.99",
+      "priceBuy": "15.49"
+    },
+    {
+      "id": 7,
+      "title": "Black Panther",
+      "synopsis": "T'Challa returns home to Wakanda to assume his rightful place as king, but faces challenges from rivals.",
+      "posterSmall": "https://m.media-amazon.com/images/M/MV5BYWY5NDY1ZjItZDQxMy00MTAzLTgyOGQtNTQxYjFiMzZjMjUyXkEyXkFqcGc@._V1_.jpg",
+      "posterLarge": "https://i.ytimg.com/vi/yby0xAtcg14/maxresdefault.jpg",
+      "priceRent": "3.49",
+      "priceBuy": "13.49"
+    }
+  ],
+  "tvshows": [
+    {
+      "id": 1,
+      "title": "The Witcher",
+      "synopsis": "A mutated monster-hunter struggles to find his place in a world.",
+      "posterSmall": "https://m.media-amazon.com/images/M/MV5BMTQ5MDU5MTktMDZkMy00NDU1LWIxM2UtODg5OGFiNmRhNDBjXkEyXkFqcGc@._V1_.jpg",
+      "posterLarge": "https://www.fsunews.com/gcdn/presto/2020/01/26/PFSU/b59010c6-fc96-485d-8413-2fa94b4e4a5e-960x0.jpg?width=660&height=434&fit=crop&format=pjpg&auto=webp",
+      "priceRent": "2.99",
+      "priceBuy": "12.99"
+    },
+    {
+      "id": 2,
+      "title": "Stranger Things",
+      "synopsis": "A young boy disappears, and his mother and friends must face forces.",
+      "posterSmall": "https://m.media-amazon.com/images/M/MV5BMjg2NmM0MTEtYWY2Yy00NmFlLTllNTMtMjVkZjEwMGVlNzdjXkEyXkFqcGc@._V1_.jpg",
+      "posterLarge": "https://occ-0-8407-90.1.nflxso.net/dnm/api/v6/Qs00mKCpRvrkl3HZAN5KwEL1kpE/AAAABY1lgHLARXhiipGC_8D2x1i4TPMy_k0n-TsE7GJBt96mIXfz4hCYkTmiJhBXH0v_xdr_0Z99muRipunQBBdVq3gjShE8I7LOTtav-2kHnAS6PGAGY9wd9hTC6eORizm85Y62SA.webp?r=c68",
+      "priceRent": "3.49",
+      "priceBuy": "15.49"
+    },
+    {
+      "id": 3,
+      "title": "Breaking Bad",
+      "synopsis": "A high school chemistry teacher turns to a life of crime to secure his family's future.",
+      "posterSmall": "https://m.media-amazon.com/images/M/MV5BMzU5ZGYzNmQtMTdhYy00OGRiLTg0NmQtYjVjNzliZTg1ZGE4XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+      "posterLarge": "https://www.screentune.com/wp-content/uploads/2019/10/258026.png",
+      "priceRent": "3.29",
+      "priceBuy": "14.29"
+    },
+    {
+      "id": 4,
+      "title": "Game of Thrones",
+      "synopsis": "Nine noble families wage war against each other to gain control over the mythical land of Westeros.",
+      "posterSmall": "https://m.media-amazon.com/images/M/MV5BMTNhMDJmNmYtNDQ5OS00ODdlLWE0ZDAtZTgyYTIwNDY3OTU3XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+      "posterLarge": "https://static.hbo.com/game-of-thrones-1-1920x1080.jpg",
+      "priceRent": "4.19",
+      "priceBuy": "18.99"
+    },
+    {
+      "id": 5,
+      "title": "Money Heist",
+      "synopsis": "A criminal mastermind plans the biggest heist in recorded history to print billions of euros in the Royal Mint of Spain.",
+      "posterSmall": "https://image.tmdb.org/t/p/original/reEMJA1uzscCbkpeRJeTT2bjqUp.jpg",
+      "posterLarge": "https://static1.cbrimages.com/wordpress/wp-content/uploads/2020/04/10-Smartest-Characters-in-Money-Heist-Ranked.jpg",
+      "priceRent": "3.79",
+      "priceBuy": "16.49"
+    },
+    {
+      "id": 6,
+      "title": "Sherlock",
+      "synopsis": "A modern update finds the famous sleuth and his doctor partner solving crime in 21st century London.",
+      "posterSmall": "https://m.media-amazon.com/images/M/MV5BNTQzNGZjNDEtOTMwYi00MzFjLWE2ZTYtYzYxYzMwMjZkZDc5XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+      "posterLarge": "https://player.bbc.com/static/posters/1810556/original/1585653092-069c50d32152399ae9f0d81ca5df32e35a7695c9.jpg",
+      "priceRent": "2.69",
+      "priceBuy": "11.99"
+    },
+    {
+      "id": 7,
+      "title": "The Mandalorian",
+      "synopsis": "A lone gunfighter makes his way through the outer reaches of the galaxy, far from the authority of the New Republic.",
+      "posterSmall": "https://m.media-amazon.com/images/M/MV5BNjgxZGM0OWUtZGY1MS00MWRmLTk2N2ItYjQyZTI1OThlZDliXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg",
+      "posterLarge": "https://s.abcnews.com/images/GMA/The-Mandalorian-ht-ml-191029_hpMain_16x9_992.jpg",
+      "priceRent": "4.59",
+      "priceBuy": "17.89"
+    }
+  ]
+}

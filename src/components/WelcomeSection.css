@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Poppins&display=swap');
+
+.welcome-section {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 50px;
+  margin: 40px 20px;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 0 25px rgba(145, 92, 253, 0.2);
+  animation: fadeInUp 0.8s ease-in-out;
+  text-align: center;
+}
+
+.welcome-title {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 42px;
+  color: #ffffff;
+  text-shadow: 0 0 10px #9e4dff, 0 0 20px #4b0082;
+  margin-bottom: 20px;
+}
+
+.welcome-subtitle {
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  color: #d3c7f3;
+  line-height: 1.7;
+}
+
+/* Optional fade-in animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

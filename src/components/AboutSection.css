@@ -1,0 +1,25 @@
+.about-section {
+  background: linear-gradient(to right, #1a0f2e, #0c0615);
+  color: #e5e5e5;
+  padding: 40px 20px;
+  text-align: center;
+  font-family: 'Orbitron', sans-serif;
+}
+
+.about-section h2 {
+  font-size: 32px;
+  margin-bottom: 16px;
+  color: #b084f5;
+}
+
+.about-section p {
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.highlight {
+  color: #c38aff;
+  font-weight: bold;
+}
