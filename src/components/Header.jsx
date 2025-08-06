@@ -110,6 +110,9 @@ const Header = () => {
           </nav>
         </div>
       </header>
+
+          {showLogin && <LoginModal onClose={() => setShowLogin(false)} />}
+          {showRegister && <RegisterModal onClose={() => setShowRegister(false)} />}
     </>
   );
 };
