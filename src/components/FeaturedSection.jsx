@@ -53,7 +53,7 @@ const FeaturedSection = ({ endpoint, title }) => {
           The entire card is clickable and links to a details page.
         */}
         {items.map(item => (
-          <Link to={`/${item.type}/${item.id}`} key={item.id}>
+          <Link to={`/${item.type}s/${item.id}`} key={item.id}>
             <div className="card">
               <img src={item.imageUrl} alt={item.title} />
               <h3>{item.title}</h3>
