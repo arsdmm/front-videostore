@@ -28,7 +28,7 @@ const FeaturedSection = ({ endpoint, title }) => {
         or
         GET https://backend-videostore.onrender.com/api/movies?type=tvshows
     */
-    fetch(`${import.meta.env.VITE_API_BASE_URL}?type=${endpoint}`)
+    fetch(`https://backend-videostore.onrender.com/api/movies?type=${endpoint}`)
       .then(res => res.json())
       .then(data => {
         /*

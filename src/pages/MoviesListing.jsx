@@ -10,13 +10,13 @@ const MoviesListing = () => {
 
   useEffect(() => {
     // Fetch movies (type = movies)
-    fetch(`${import.meta.env.VITE_API_BASE_URL}?type=movies`)
+    fetch('https://backend-videostore.onrender.com/api?type=movies')
       .then(res => res.json())
       .then(data => setMovies(data))
       .catch(err => console.error('Error fetching movies:', err));
 
     // Fetch tvshows (type = tvshows)
-    fetch(`${import.meta.env.VITE_API_BASE_URL}?type=tvshows`)
+    fetch('https://backend-videostore.onrender.com/api?type=tvshows')
       .then(res => res.json())
       .then(data => setTvshows(data))
       .catch(err => console.error('Error fetching tvshows:', err));

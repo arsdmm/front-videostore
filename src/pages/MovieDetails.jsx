@@ -10,7 +10,7 @@ const MovieDetails = () => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch(`${import.meta.env.VITE_API_BASE_URL}/${id}`)
+    fetch('https://backend-videostore.onrender.com/api/${id}')
       .then(res => {
         if (!res.ok) {
           throw new Error('Item not found');
