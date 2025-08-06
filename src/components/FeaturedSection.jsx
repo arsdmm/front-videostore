@@ -55,7 +55,7 @@ const FeaturedSection = ({ endpoint, title }) => {
         {items.map(item => (
           <Link to={`/${item.type}/${item._id}`} key={item._id}>
             <div className="card">
-              <img src={item.posterSmall} alt={item.title} />
+              <img src={item.imageUrl} alt={item.title} />
               <h3>{item.title}</h3>
             </div>
           </Link>

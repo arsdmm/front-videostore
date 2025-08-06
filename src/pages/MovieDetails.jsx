@@ -10,7 +10,7 @@ const MovieDetails = () => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch('https://backend-videostore.onrender.com/api/${id}')
+    fetch(`https://backend-videostore.onrender.com/api/${id}`)
       .then(res => {
         if (!res.ok) {
           throw new Error('Item not found');
@@ -37,7 +37,7 @@ const MovieDetails = () => {
       <div className="movie-details-container">
         <div className="poster-section">
           <img
-            src={item.posterLarge || item.poster || item.posterSmall}
+            src={item.imageUrl}
             alt={item.title}
             className="poster-img"
           />
