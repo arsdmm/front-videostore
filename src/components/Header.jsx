@@ -28,7 +28,7 @@ const Header = () => {
   }, [query]);
 
   const handleSelect = (id, type) => {
-    navigate(`/${type}/${id}`);
+    navigate(`/${type}s/${id}`);
     setQuery('');
     setResults([]);
   };
@@ -36,38 +36,41 @@ const Header = () => {
   return (
     <>
       <header className="header">
-        <div className="logo"><Link to="/" className="logo-link">Obsidian</Link></div>
-        <nav>
-          <ul>
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/movies">Movies & TV Shows</Link></li>
-            <li>
-              <div className="search-bar">
-                <input
-                  type="text"
-                  placeholder="Search movies..."
-                  value={query}
-                  onChange={(e) => setQuery(e.target.value)}
-                />
-                {results.length > 0 && (
-                  <ul className="search-dropdown">
-                    {results.map(item => (
-                      <li key={item.id} onClick={() => handleSelect(item.id, item.type)}>
-                        {item.title}
-                      </li>
-                    ))}
-                  </ul>
-                )}
-              </div>
-            </li>
-            <li><button onClick={() => setShowLogin(true)}>Login</button></li>
-            <li><button onClick={() => setShowRegister(true)}>Register</button></li>
-          </ul>
-        </nav>
-      </header>
+        <div className="left">
+          <Link to="/" className="logo-link">Obsidian</Link>
+        </div>
 
-      {showLogin && <LoginModal onClose={() => setShowLogin(false)} />}
-      {showRegister && <RegisterModal onClose={() => setShowRegister(false)} />}
+        <div className="center">
+          <div className="search-bar">
+            <input
+              type="text"
+              placeholder="Search movies..."
+              value={query}
+              onChange={(e) => setQuery(e.target.value)}
+            />
+            {results.length > 0 && (
+              <ul className="search-dropdown">
+                {results.map(item => (
+                  <li key={item.id} onClick={() => handleSelect(item.id, item.type)}>
+                    {item.title}
+                  </li>
+                ))}
+              </ul>
+            )}
+          </div>
+        </div>
+
+        <div className="right">
+          <nav>
+            <ul>
+              <li><Link to="/">Home</Link></li>
+              <li><Link to="/movies">Movies & TV Shows</Link></li>
+              <li><button onClick={() => setShowLogin(true)}>Login</button></li>
+              <li><button onClick={() => setShowRegister(true)}>Register</button></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
     </>
   );
 };
