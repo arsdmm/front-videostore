@@ -4,10 +4,32 @@ import Footer from '../components/Footer';
 import { Link } from 'react-router-dom';
 import '../styles/Listing.css';
 
+/* 
+  MoviesListing component displays a page with two sections:
+  - A list of movies
+  - A list of TV shows
+
+  It fetches the data from the backend when the component mounts,
+  and renders each item as a clickable card that links to the detail page.
+*/
 const MoviesListing = () => {
+  /* 
+    State variables:
+    - movies: stores the array of movie objects fetched from the API
+    - tvshows: stores the array of TV show objects fetched from the API
+  */
   const [movies, setMovies] = useState([]);
   const [tvshows, setTvshows] = useState([]);
 
+  /* 
+    useEffect runs only once on component mount.
+    It sends two separate fetch requests:
+    - One for movies (with type=movie)
+    - One for TV shows (with type=tvshow)
+
+    On success, it updates the corresponding state.
+    On error, it logs the issue to the console.
+  */
   useEffect(() => {
     // Fetch movies (type = movies)
     fetch('https://backend-videostore.onrender.com/api/movies?type=movie')
@@ -22,6 +44,13 @@ const MoviesListing = () => {
       .catch(err => console.error('Error fetching tvshows:', err));
   }, []);
 
+  /* 
+    JSX layout:
+    - Includes Header and Footer components
+    - Two sections: one for Movies, one for TV Shows
+    - Each section contains a title and a grid of cards
+    - Each card links to the corresponding detail page (based on ID and type)
+  */
   return (
     <>
       <Header />
