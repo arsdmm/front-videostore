@@ -15,8 +15,8 @@ const Home = () => {
       <main>
         <WelcomeSection />
       </main>
-      <FeaturedSection endpoint="movies" title="Featured Movies" />
-      <FeaturedSection endpoint="tvshows" title="Featured TV Shows" />
+      <FeaturedSection endpoint="movie" title="Featured Movies" />
+      <FeaturedSection endpoint="tvshow" title="Featured TV Shows" />
       <AboutSection />
       <HollywoodNewsSection />
       <Footer />
