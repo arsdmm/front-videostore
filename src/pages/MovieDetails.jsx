@@ -10,7 +10,7 @@ const MovieDetails = () => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch(`https://backend-videostore.onrender.com/api/${id}`)
+    fetch(`https://backend-videostore.onrender.com/api/movies/${id}`)
       .then(res => {
         if (!res.ok) {
           throw new Error('Item not found');

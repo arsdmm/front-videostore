@@ -33,7 +33,7 @@ const MoviesListing = () => {
             {movies.map(movie => (
               <Link key={movie.id} to={`/movies/${movie.id}`} className="card-link">
                 <div className="listing-card">
-                  <img src={movie.posterSmall} alt={movie.title} />
+                  <img src={movie.imageUrl} alt={movie.title} />
                   <h3>{movie.title}</h3>
                 </div>
               </Link>
@@ -47,7 +47,7 @@ const MoviesListing = () => {
             {tvshows.map(show => (
               <Link key={show.id} to={`/tvshows/${show.id}`} className="card-link">
                 <div className="listing-card">
-                  <img src={show.posterSmall} alt={show.title} />
+                  <img src={show.imageUrl} alt={show.title} />
                   <h3>{show.title}</h3>
                 </div>
               </Link>
