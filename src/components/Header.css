@@ -65,39 +65,53 @@ nav ul li button:hover {
 .search-bar {
   position: relative;
   width: 100%;
-  max-width: 400px;
+  max-width: 700px;
 }
 
 .search-bar input {
   width: 100%;
-  padding: 8px 12px;
-  border-radius: 20px;
-  border: none;
-  outline: none;
+  padding: 10px 16px;
+  border-radius: 999px;
+  border: 2px solid #7d32a8;
+  background-color: #1a072f;
+  color: #f4eaff;
   font-size: 14px;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.search-bar input::placeholder {
+  color: #b999d4;
+}
+
+.search-bar input:focus {
+  border-color: #c162ff;
+  box-shadow: 0 0 6px rgba(193, 98, 255, 0.6);
 }
 
 .search-dropdown {
   position: absolute;
-  top: 40px;
+  top: 42px;
   left: 0;
   width: 100%;
-  background: #fff;
-  color: #000;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-  z-index: 10;
+  background-color: #220740;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+  z-index: 1000;
+  max-height: 250px;
+  overflow-y: auto;
 }
 
 .search-dropdown li {
-  padding: 10px;
+  padding: 10px 16px;
+  color: #f4eaff;
   cursor: pointer;
-  transition: background 0.2s ease-in-out;
+  transition: background-color 0.2s ease;
 }
 
 .search-dropdown li:hover {
-  background-color: #f2f2f2;
+  background-color: #341257;
 }
+
 
 
