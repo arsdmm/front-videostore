@@ -83,8 +83,8 @@ const MovieDetails = () => {
           <h1 className="title">{item.title}</h1>
           <p className="description">{item.synopsis}</p>
           <div className="price-buttons">
-            <button className="price-btn">Rent: ${item.priceRent}</button>
-            <button className="price-btn">Buy: ${item.priceBuy}</button>
+            <button className="price-btn">Rent: ${item.rentalPrice}</button>
+            <button className="price-btn">Buy: ${item.purchasePrice}</button>
           </div>
         </div>
       </div>
